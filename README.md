@@ -64,3 +64,12 @@ The above command automatically installs the required version of `perf` for the 
    ./start2.sh
    ```
 4. The results can be viewed in the `Output1` folder.
+
+## Results
+
+
+
+
+
+
+
