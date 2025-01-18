@@ -66,7 +66,79 @@ The above command automatically installs the required version of `perf` for the 
 4. The results can be viewed in the `Output1` folder.
 
 ## Results
+1.1.1 Correlation of different version of matrix multiplication 
 
+Here we have used regular page size of 4KB for matrices of sizes 2048×2048 and 8192×8192.  
+
+Here Table 1 has seven rows representing parameters for evaluation and three columns representing 3 variations of for loop used in matrix multiplication for matrix size 2048 obtained using perf: 
+
+Matrix Size/Variation 
+
+2048 x 2048 
+
+ijk 
+
+jik 
+
+kij 
+
+L1- misses 
+
+13,18,11,37,025 
+
+12,70,99,07,320 
+
+57,36,97,582 
+
+L2-misses 
+
+9,03,02,044 
+
+1,52,56,493  
+
+65,95,455  
+
+LLC-misses 
+
+9,07,00,738  
+
+1,52,10,878  
+
+67,58,656  
+
+Cache-misses 
+
+40,91,54,904 
+
+17,60,50,823 
+
+36,36,37,369 
+
+Page fault 
+
+14,503 
+
+14,504 
+
+12,448 
+
+Branch-misses 
+
+43,62,879 
+
+43,71,191  
+
+44,07,806 
+
+Time elapsed 
+
+14.30 seconds 
+
+10.83 seconds 
+
+4.83 seconds 
+
+Table 1: Comparing various parameters for every variation for 4kb 
 
 
 
