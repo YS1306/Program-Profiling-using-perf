@@ -1,6 +1,10 @@
 
 # Performance Analysis Using `perf`
-
+The objective of this experiment is to understand the correlation between the memory performance and execution
+time for different variations of Matrix Multiplication Programs. Here, we have tested matrices of two sizes i.e.
+2048×2048 and 8192×8192. Also we have tried three variations of Program – One with regular 4KB pages, one
+with huge pages of 2MB and one with tiling of size 64 in parts 1.1.1, 1.1.2, 1.1.3 respectively. For performance
+analysis, we are using the perf tool which is available through linux terminal. 
 The directory consists of three subdirectories: `q1`, `q2_2mb`, and `q3_64block` for part (a), part (b), and part (c) respectively. We are using the `perf` tool for performance analysis.
 
 ## Installing `perf`
