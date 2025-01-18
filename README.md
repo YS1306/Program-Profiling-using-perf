@@ -86,8 +86,37 @@ Here Table 1 has seven rows representing parameters for evaluation and three col
 
 Table 1: Comparing various parameters for every variation for 4kb 
 
+### Observation 
+
+From the above table it's clearly visible that kij variation takes less time to execute as compared to variations ijk and jik. The primary reason for that is less number of L1 cache misses and lesser number of overall cache misses (L2 and LLC), in the variation kij in comparison with variations ijk and jik. Here, one observation is that the difference in L1 Cache misses affects the execution time the most. 
+
+In between the variations ijk and jik , jik performs better, which again is because of the lesser number of  cache misses in jik than ijk. Again the L1 cache misses are a dominating factor affecting the execution time of the program. 
 
 
 
+Here Table 2 has seven rows representing parameters for evaluation and three columns representing 3 variations of for loop used in matrix multiplication for matrix size 8192.
+| **Metric**          | **ijk**               | **jik**               | **kij**               |
+|---------------------|-----------------------|-----------------------|-----------------------|
+| **L1-misses**       | 11,99,31,91,09,889   | 11,77,11,62,63,566   | 69,39,38,16,138      |
+| **L2-misses**       | 96,15,32,703         | 87,65,49,873         | 24,63,30,608         |
+| **LLC-misses**      | 96,64,09,698         | 87,63,22,477         | 24,61,95,843         |
+| **Cache-misses**    | 51,65,31,88,152      | 34,85,82,30,393      | 29,18,56,40,165      |
+| **Page faults**     | 254,251              | 254,253              | 196,875              |
+| **Branch-misses**   | 7,73,32,823          | 7,44,16,220          | 7,19,07,364          |
+| **Time elapsed**    | 3630.56 seconds      | 3502.89 seconds      | 280.34 seconds       |
+
+Table 2: Comparing various parameters for every variation for 4kb
+
+### Observation 
+
+In this case also, we can observe that the variation kij takes very less time as compared to the other two variations, the primary reason for that is less L1 cache misses and overall cache misses (L2 and LLC) in kij in comparison with ijk and jik. 
+
+In between variations ijk and jik, jik performs better. Again, the difference in L1 cache misses affects the execution time. 
+
+### Conclusion
+
+After analying all these data, we can conclude that, the most dominating factor that affects the exection time of these programs is the number of L1 Cache misses. As we go down in the memory hierarchy, the influence on the execution time of the programs gradually decreases.  
+
+In the larger size matrix, we can see significant differences in execution of all variations, and it's obvious 8192 matrix have more execution time compared to 2048 size matrix. 
 
 
