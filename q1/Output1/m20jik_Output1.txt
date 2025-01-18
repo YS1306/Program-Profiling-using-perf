@@ -1,0 +1,49 @@
+
+ Performance counter stats for './m20jik':
+
+    8,69,00,08,329      branches                                                                (13.51%)
+         43,71,191      branch-misses                    #    0.05% of all branches             (16.24%)
+      25,79,06,966      bus-cycles                                                              (18.98%)
+      17,60,50,823      cache-misses                     #   20.45% of all cache refs           (21.71%)
+      86,08,23,446      cache-references                                                        (21.75%)
+   49,27,08,62,019      cpu-cycles                                                              (21.78%)
+   69,42,06,39,987      instructions                     #    1.41  insn per cycle              (24.51%)
+            14,504      page-faults                                                           
+   10,83,14,72,387 ns   duration_time                                                         
+   12,52,99,45,125      L1-dcache-load-misses            #   48.31% of all L1-dcache accesses   (24.51%)
+   25,93,50,78,353      L1-dcache-loads                                                         (24.51%)
+    8,69,42,47,372      L1-dcache-stores                                                        (24.48%)
+         13,33,030      L1-icache-load-misses                                                   (24.45%)
+         12,52,788      l2_rqsts.all_code_rd                                                    (10.78%)
+   11,13,80,71,266      l2_rqsts.all_demand_data_rd                                             (10.78%)
+      11,87,95,909      l2_rqsts.all_demand_miss                                                (10.78%)
+   11,12,13,12,845      l2_rqsts.all_demand_references                                          (10.78%)
+          1,92,352      l2_rqsts.code_rd_hit                                                    (10.78%)
+         10,39,767      l2_rqsts.code_rd_miss                                                   (10.78%)
+   11,02,30,65,340      l2_rqsts.demand_data_rd_hit                                             (10.78%)
+      11,73,22,203      l2_rqsts.demand_data_rd_miss                                            (10.78%)
+       1,50,21,800      LLC-load-misses                  #   12.48% of all LL-cache accesses    (10.78%)
+      12,03,44,502      LLC-loads                                                               (10.78%)
+          4,59,923      LLC-store-misses                                                        (5.39%)
+          5,20,784      LLC-stores                                                              (5.39%)
+         45,69,423      branch-load-misses                                                      (8.09%)
+    8,75,16,50,121      branch-loads                                                            (10.78%)
+    2,50,80,65,344      dTLB-load-misses                 #    9.69% of all dTLB cache accesses  (13.48%)
+   25,87,84,65,231      dTLB-loads                                                              (16.18%)
+         22,26,198      dTLB-store-misses                                                       (16.18%)
+    8,67,68,22,744      dTLB-stores                                                             (16.18%)
+            30,814      iTLB-load-misses                                                        (10.78%)
+       1,53,95,475      L2-load-misses                   #   12.79% of all LL-cache accesses    (10.78%)
+          2,31,394      L2-store-misses                                                         (10.78%)
+       1,52,56,493      L2-misses                        #   12.68% of all LL-cache accesses    (10.78%)
+   12,70,99,07,320      L1-dcache-misses                 #   49.01% of all L1-dcache accesses   (10.78%)
+       1,52,10,878      LLC-misses                       #   12.64% of all LL-cache accesses    (10.78%)
+    2,54,82,70,854      dTLB-misses                      #    9.85% of all dTLB cache accesses  (10.78%)
+            29,302      iTLB-misses                                                             (10.78%)
+
+      10.831472387 seconds time elapsed
+
+      10.814878000 seconds user
+       0.016004000 seconds sys
+
+

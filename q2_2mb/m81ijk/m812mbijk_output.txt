@@ -1,0 +1,38 @@
+
+ Performance counter stats for './m812mbijk':
+
+40,358,281,915,652      cycles                                                                  (29.17%)
+27,524,843,482,420      instructions                     #    0.68  insn per cycle              (33.33%)
+12,109,541,766,778      L1-dcache-loads                                                         (33.33%)
+   655,119,679,387      L1-dcache-load-misses            #    5.41% of all L1-dcache accesses   (33.33%)
+   <not supported>      L1-icache-loads                                                       
+       563,750,337      L1-icache-load-misses                                                   (33.33%)
+ 1,108,094,739,138      L1-dcache-stores                                                        (33.33%)
+   <not supported>      L1-dcache-store-misses                                                
+   550,021,282,368      L2-loads                                                                (16.67%)
+   537,709,469,090      L2-load-misses                   #   97.76% of all LL-cache accesses    (16.67%)
+       207,827,888      L2-stores                                                               (8.33%)
+       194,292,873      L2-store-misses                                                         (8.33%)
+ 1,070,361,591,565      L2_rqsts.miss                                                           (12.50%)
+   550,013,602,514      LLC-loads                                                               (12.50%)
+   537,718,931,378      LLC-load-misses                  #   97.76% of all LL-cache accesses    (12.50%)
+       204,273,854      LLC-stores                                                              (8.33%)
+       187,940,507      LLC-store-misses                                                        (8.33%)
+ 1,070,234,268,662      cache-references                                                        (12.50%)
+ 1,055,653,697,377      cache-misses                     #   98.64% of all cache refs           (16.67%)
+   <not supported>      iTLB-loads                                                            
+           486,632      iTLB-load-misses                                                        (20.83%)
+12,107,317,901,324      dTLB-loads                                                              (25.00%)
+         1,110,994      dTLB-load-misses                 #    0.00% of all dTLB cache accesses  (25.00%)
+ 1,107,806,877,545      dTLB-stores                                                             (25.00%)
+         8,933,175      dTLB-store-misses                                                       (16.67%)
+               513      page-faults                                                           
+   554,831,236,483      branches                                                                (20.83%)
+       143,291,926      branch-misses                    #    0.03% of all branches             (25.00%)
+
+    8866.055849968 seconds time elapsed
+
+    8863.010866000 seconds user
+       0.135997000 seconds sys
+
+

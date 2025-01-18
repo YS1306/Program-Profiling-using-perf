@@ -1,0 +1,38 @@
+
+ Performance counter stats for './m2064kij':
+
+   122,084,567,634      cycles                                                                  (29.11%)
+   448,959,067,180      instructions                     #    3.68  insn per cycle              (33.28%)
+   198,571,167,787      L1-dcache-loads                                                         (33.30%)
+        71,466,570      L1-dcache-load-misses            #    0.04% of all L1-dcache accesses   (33.31%)
+   <not supported>      L1-icache-loads                                                       
+         3,890,248      L1-icache-load-misses                                                   (33.32%)
+    17,552,963,332      L1-dcache-stores                                                        (33.34%)
+   <not supported>      L1-dcache-store-misses                                                
+         2,187,573      L2-loads                                                                (16.69%)
+         1,150,588      L2-load-misses                   #   52.60% of all LL-cache accesses    (16.69%)
+           483,804      L2-stores                                                               (8.34%)
+           347,309      L2-store-misses                                                         (8.35%)
+        43,322,557      L2_rqsts.miss                                                           (12.52%)
+         2,064,553      LLC-loads                                                               (12.52%)
+         1,043,244      LLC-load-misses                  #   47.69% of all LL-cache accesses    (12.52%)
+           393,503      LLC-stores                                                              (8.34%)
+           330,360      LLC-store-misses                                                        (8.34%)
+        32,760,005      cache-references                                                        (12.51%)
+        12,961,619      cache-misses                     #   39.57% of all cache refs           (16.67%)
+   <not supported>      iTLB-loads                                                            
+             1,920      iTLB-load-misses                                                        (20.82%)
+   198,847,377,829      dTLB-loads                                                              (24.98%)
+           192,618      dTLB-load-misses                 #    0.00% of all dTLB cache accesses  (24.97%)
+    17,546,926,940      dTLB-stores                                                             (24.95%)
+            90,368      dTLB-store-misses                                                       (16.63%)
+            14,504      page-faults                                                           
+     9,124,548,202      branches                                                                (20.79%)
+       136,488,414      branch-misses                    #    1.50% of all branches             (24.95%)
+
+      27.131509804 seconds time elapsed
+
+      27.102489000 seconds user
+       0.027998000 seconds sys
+
+
